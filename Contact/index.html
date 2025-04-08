@@ -8,12 +8,12 @@
     <title>Contact - Nicholas Fortune</title>
     <link rel="stylesheet" type="text/css" href="/Shared/Shared.css">
     <link rel="stylesheet" type="text/css" href="/Contact/Styles.css">
-    <script src="/Contact/Scripts.js"></script>
+    <script src="/Shared/Scripts.js" defer></script>
 </head>
 <body>
     <!--Header-->
     <div class="header" id="header">
-        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%;"><h2 style="font-size: 1.75vw; font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
+        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%; color: black;"><h2 style="font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
         <a href="/" class="headerText" aria-label="Go to the homepage"><h2>HOME</h2></a>
         <a href="/About/" class="headerText" aria-label="Go to Nicholas Fortune's about page"><h2>ABOUT</h2></a>
         <a href="/Resume/" class="headerText" aria-label="Go to Nicholas Fortune's résumé"><h2>RÉSUMÉ</h2></a>
@@ -23,20 +23,24 @@
 
     <!--Hero Image-->
     <div class="heroContainer" id="heroContainer">
-        <img src="/Contact/Images/HeroImg.jpg" class="heroImage" id="heroImage">
+        <picture>
+            <source srcset="/Contact/Images/High/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/Contact/Images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/Contact/Images/HeroImg.jpg" alt="A man reading emails" class="heroImage" id="heroImage">
+        </picture>
         <div class="heroText" id="heroText">CONTACT</div>
     </div>
     
     <!--Body-->
     <div class="contactContainer">
         <form action="mail.php" method="POST">
-            <div style="display: flex;">
-                <div style="display:block; width: 50%; margin: auto;">
+            <div class="flexcontainer">
+                <div class="inputbar">
                     <label for="name"><h3>Your Name/Company</h3></label>
                     <input type="text" id="name" class="text" name="name" style="font-size: 1vw;" required>
                 </div>
                 
-                <div style="display:block; width: 50%; margin: auto;">
+                <div class="inputbar">
                     <label for="email"><h3>Your Email</h3></label>
                     <input type="email" id="email" class="text" name="email" style="font-size: 1vw;" required>
                 </div>

@@ -8,12 +8,12 @@
     <title>About - Nicholas Fortune</title>
     <link rel="stylesheet" type="text/css" href="/Shared/Shared.css">
     <link rel="stylesheet" type="text/css" href="/About/Styles.css">
-    <script src="/About/Scripts.js"></script>
+    <script src="/Shared/Scripts.js" defer></script>
 </head>
 <body>
     <!--Header-->
     <div class="header" id="header">
-        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%;"><h2 style="font-size: 1.75vw; font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
+        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%; color: black;"><h2 style="font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
         <a href="/" class="headerText" aria-label="Go to the homepage"><h2>HOME</h2></a>
         <a href="/About/" class="headerText" aria-label="Go to Nicholas Fortune's about page" style="text-decoration: underline black;"><h2>ABOUT</h2></a>
         <a href="/Resume/" class="headerText" aria-label="Go to Nicholas Fortune's résumé"><h2>RÉSUMÉ</h2></a>
@@ -23,7 +23,11 @@
 
     <!--Hero Image-->
     <div class="heroContainer" id="heroContainer">
-        <img src="/About/Images/HeroImg.jpg" class="heroImage" id="heroImage">
+        <picture>
+            <source srcset="/About/Images/High/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/About/Images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/About/Images/HeroImg.jpg" alt="Nicholas Fortune in Utah" class="heroImage" id="heroImage">
+        </picture>
         <div class="heroText" id="heroText">ABOUT</div>
     </div>
     
@@ -31,15 +35,15 @@
     <div class="aboutContainer">
         <div class="aboutText">
             <h1>I'm Nicholas Fortune.</h1>
-            <h2 style="text-align: justify;">I am a mechatronics engineer with a passion for designing, building, and programming physical and digital systems. Whether it's an inconvenience like closing my blinds at night or a large project like developing an anti-drone missile, I always love engineering a solution. Whether working independently or in a team, I am committed to precision, efficiency, and continuous learning in all of my projects.
+            <h2>I am a mechatronics engineer with a passion for designing, building, and programming physical and digital systems. Whether it's an inconvenience like closing my blinds at night or a large project like developing an anti-drone missile, I always love engineering a solution. Whether working independently or in a team, I am committed to precision, efficiency, and continuous learning in all of my projects.
             </h2><br>
             <div class="buttons">
-                <a href="/Resume/" style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's résumé"><button class="button"><h2 style="font-size: 1vw;">RÉSUMÉ</h2></button></a>
-                <a href="/Portfolio/"style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's portfolio"><button class="button"><h2 style="font-size: 1vw;">PORTFOLIO</h2></button></a>
+                <a href="/Resume/" style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's résumé"><button class="button"><h3>RÉSUMÉ</h3></button></a>
+                <a href="/Portfolio/"style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's portfolio"><button class="button"><h3>PORTFOLIO</h3></button></a>
             </div>
         </div>
         <div class="aboutImage">
-            <img src="/Home/Images/Me.jpg" class="aboutImage" alt="A photo of Nicholas Fortune">
+            <img src="/Home/Images/Me.webp" class="aboutImage" alt="A photo of Nicholas Fortune">
         </div>
     </div>
 

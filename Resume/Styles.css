@@ -18,21 +18,21 @@
    background-color: rgb(215, 219, 221);
  }
  .heroContainer {
-   padding-top: 7vh;
-   position: relative;
-   width: 100%;
-   height: 53vh;
-   overflow: hidden;
-   margin-bottom: 33vh;
- }
- .heroImage {
-   width: 100%;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 0;
- }
+  padding-top: 7vh;
+  position: relative;
+  width: 100%;
+  height: calc(25vw - 7vh);
+  overflow: hidden;
+  margin-bottom: 33vh;
+  } 
+  .heroImage {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
  .heroText {
    width: 100%;
    position: absolute;
@@ -63,4 +63,36 @@
   background-color:#ebeff0;
   box-shadow: 4px 4px 4px #00000044;
   padding: 1%;
+ }
+ .download {
+  color: black;
+ }
+ @media (max-aspect-ratio: 1/1) {
+  .heroContainer {
+    height: calc(75vw - 7vh);
+    margin-bottom: 15vh;
+  } 
+  .heroText {
+    font-size: 16vw;
+    text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
+  }
+  .Container {
+    width: 90%;
+    padding: 1%;
+   }
+   .resumeContainer {
+    width: 45%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 0%;
+    background-color:#ebeff0;
+    box-shadow: 4px 4px 4px #00000044;
+    padding: 1%;
+   }
+   .downloadtitle {
+    font-size: 4vw;
+   }
+   .download {
+    font-size: 3.5vw;
+   }
  }

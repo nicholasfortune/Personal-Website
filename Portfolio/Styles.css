@@ -18,13 +18,13 @@
    background-color: rgb(215, 219, 221);
  }
  .heroContainer {
-   padding-top: 7vh;
-   position: relative;
-   width: 100%;
-   height: 63vh;
-   overflow: hidden;
-   margin-bottom: 33vh;
- }
+  padding-top: 7vh;
+  position: relative;
+  width: 100%;
+  height: calc(25vw - 7vh);
+  overflow: hidden;
+  margin-bottom: 33vh;
+}
  .heroImage {
    width: 100%;
    position: absolute;
@@ -62,11 +62,67 @@
   .portfolioImage:hover {
     box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.25)
   }
-  .portfolioText {
-    line-height: 0.8vw;
-    width: 20vw;
-    padding: 5%;
+  .portfolioTextTitle {
+    padding-top: 2.5%;
+    padding-left: 2.5%;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-    text-align: left;
-    user-select: none;
+  }
+  .portfolioTextSub {
+    padding-left: 2.5%;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  }
+  .portfolioDate {
+    margin-top: 19vw;
+    position: absolute;
+    width: 19vw;
+    text-align: right;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  }
+  @media (max-aspect-ratio: 1/1) {
+    .heroContainer {
+      height: calc(75vw - 7vh);
+      margin-bottom: 15vh;
+    }
+    .heroText {
+      font-size: 16vw;
+      text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
+    }
+    .portfolioContainer {
+      display: flex;
+      width: 80vw;
+      margin: auto;
+      justify-content: center;
+      align-items: center;  
+    }
+    .portfolioImage {
+      height: 40vw;
+      width: 40vw;
+      margin: 0%;
+      transition: box-shadow 0.1s ease;
+    }
+    .portfolioTextbox {
+      line-height: 3vw;
+      width: 40vw;
+      padding: 5%;
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+      text-align: left;
+      user-select: none;
+    }
+    .portfolioTextTitle {
+      font-size: 5vw;
+      line-height: 5vw;
+    }
+    .portfolioTextSub {
+      font-size: 4vw;
+      line-height: 4vw;
+    }
+    .portfolioDate {
+      margin-top: 34vw;
+      position: absolute;
+      font-size: 4vw;
+      line-height: 4vw;
+      width: 37vw;
+      text-align: right;
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    }
   }

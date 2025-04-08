@@ -8,12 +8,12 @@
     <title>Résumé - Nicholas Fortune</title>
     <link rel="stylesheet" type="text/css" href="/Shared/Shared.css">
     <link rel="stylesheet" type="text/css" href="/Resume/Styles.css">
-    <script src="/Resume/Scripts.js"></script>
+    <script src="/Shared/Scripts.js" defer></script>
 </head>
 <body>
     <!--Header-->
     <div class="header" id="header">
-        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%;"><h2 style="font-size: 1.75vw; font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
+        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%; color: black;"><h2 style="font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
         <a href="/" class="headerText" aria-label="Go to the homepage"><h2>HOME</h2></a>
         <a href="/About/" class="headerText" aria-label="Go to Nicholas Fortune's about page"><h2>ABOUT</h2></a>
         <a href="/Resume/" class="headerText" aria-label="Go to Nicholas Fortune's résumé" style="text-decoration: underline black;"><h2>RÉSUMÉ</h2></a>
@@ -23,7 +23,11 @@
 
     <!--Hero Image-->
     <div class="heroContainer" id="heroContainer">
-        <img src="/Resume/Images/HeroImg.jpg" class="heroImage" id="heroImage">
+        <picture>
+            <source srcset="/Resume/Images/High/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/Resume/Images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/Resume/Images/High/HeroImg.webp" class="heroImage" id="heroImage">
+        </picture>
         <div class="heroText" id="heroText">RÉSUMÉ</div>
     </div>
     
@@ -32,15 +36,15 @@
     <hr>
     <div class="Container">
         <div class="resumeContainer">
-            <h2 style="margin-bottom: 1vh; text-align: center;"><b>ATS-Friendly Résumé</b></h2>
-            <a href="/Resumes/ATS/Nicholas Fortune - ATS-Friendly Résumé - Redacted.pdf" class="button" download><h2>Download .PDF</h2></a>
-            <a href="/Resumes/ATS/Nicholas Fortune - ATS-Friendly Résumé - Redacted.docx" class="button" download><h2>Download .DOCX</h2></a>
-            <a href="/Resumes/ATS/Nicholas Fortune - ATS-Friendly Résumé - Redacted.txt" class="button" download><h2>Download .TXT</h2></a>
+            <h2 style="margin-bottom: 1vh; text-align: center;"  class="downloadtitle"><b>ATS-Friendly Résumé</b></h2>
+            <a href="/Resumes/ATS/Nicholas Fortune - ATS-Friendly Résumé - Redacted.pdf" class="button" download><h2 class="download">Download .PDF</h2></a>
+            <a href="/Resumes/ATS/Nicholas Fortune - ATS-Friendly Résumé - Redacted.docx" class="button" download><h2 class="download">Download .DOCX</h2></a>
+            <a href="/Resumes/ATS/Nicholas Fortune - ATS-Friendly Résumé - Redacted.txt" class="button" download><h2 class="download">Download .TXT</h2></a>
         </div>
         <div class="resumeContainer">
-            <h2 style="margin-bottom: 1vh; text-align: center;"><b>Formatted Résumé</b></h2>
-            <a href="/Resumes/Formatted/Nicholas Fortune - Formatted Résumé - Redacted.pdf" class="button" download><h2>Download .PDF</h2></a>
-            <a href="/Resumes/Formatted/Nicholas Fortune - Formatted Résumé - Redacted.docx" class="button" download><h2>Download .DOCX</h2></a>
+            <h2 style="margin-bottom: 1vh; text-align: center;"  class="downloadtitle"><b>Formatted Résumé</b></h2>
+            <a href="/Resumes/Formatted/Nicholas Fortune - Formatted Résumé - Redacted.pdf" class="button" download><h2 class="download">Download .PDF</h2></a>
+            <a href="/Resumes/Formatted/Nicholas Fortune - Formatted Résumé - Redacted.docx" class="button" download><h2 class="download">Download .DOCX</h2></a>
         </div>
     </div>
 

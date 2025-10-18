@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(headerManager);
-    fetch("/Shared/Footer.html")
+    fetch("/Shared/footer.html")
+        .then(response => response.text())
+        .then(html => document.getElementById("footer").innerHTML = html)
+        .catch(error => console.error("Error loading footer:", error));
+    fetch("/Shared/header.html")
         .then(response => response.text())
         .then(html => document.getElementById("footer").innerHTML = html)
         .catch(error => console.error("Error loading footer:", error));
